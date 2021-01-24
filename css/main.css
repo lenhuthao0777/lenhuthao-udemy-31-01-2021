@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto" , "Poppins" ,sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ude-btn--white {
+  background: #fff;
+  border: 1px solid;
+  padding: 11px 12px;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ude-btn--red {
+  background: #ec5252;
+  border: 1px solid;
+  padding: 11px 12px;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ude-btn--red:hover {
+  background: #992337;
+  color: #fff;
+  border-color: #992337;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.header-left .navbar-brand img {
+  width: 110px;
+}
+
+.header-left .header-cate {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.header-left .header-form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 10px;
+}
+
+.header-right .nav-link {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-right .ude-business, .header-right .ude-teach {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-left .header-cate, .header-left .header-form {
+    display: none;
+  }
+  .header-right .ude-btnGroup {
+    display: none;
+  }
+}
+
+.udemy-carousel {
+  background-image: url(../img/cover.jpg);
+  height: 400px;
+}
+/*# sourceMappingURL=main.css.map */

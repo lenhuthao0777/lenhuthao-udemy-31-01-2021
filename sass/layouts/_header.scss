@@ -1,0 +1,49 @@
+// header
+.header-left{
+    display: flex;
+    align-items: center;
+    @include styleText($color-black-light, $fs-1,$fw-normal);
+    .navbar-brand{
+        img{
+            width: 110px;
+        }
+    }
+    .header-cate{
+        @include styleText($color-black-light, $fs-1,$fw-normal);
+    }
+    .header-form{
+        flex-grow: 1;
+        padding-left: 10px;
+    }
+}
+.header-right{
+    .nav-link{
+        @include styleText($color-black-light, $fs-1,$fw-normal)
+    }
+}
+// end header
+// corelap
+
+// responesive
+@include responesive("extra-large"){
+    .header-right{
+        .ude-business,.ude-teach{
+            display: none;
+        }
+    }
+}
+@include responesive("medium"){
+    .header-left{
+        .header-cate,.header-form{
+            display: none;
+        }
+        .navbar-brand{
+            // margin: auto;
+        }
+    }
+    .header-right{
+        .ude-btnGroup{
+            display: none;
+        }
+    }
+}
