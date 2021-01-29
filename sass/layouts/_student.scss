@@ -1,0 +1,77 @@
+.ude-student--heading{
+    padding:20px 0 0 30px;
+    @include styleText($color-black-light, $fs-2 - 1px, $fw-bold-0 - 200);
+}
+.ude-student {
+    overflow: hidden;
+}
+.ude-student--list {
+    padding: 20px 0;
+    display: flex;
+    // sliders
+    transform: translateX(-0%);
+    .ude-student--list__item {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        border: 1px solid #e8e9eb;
+        .ude-student--detail {
+            padding: 15px 10px;
+        }
+        .ude-student--img img {
+            width: 100%;
+        }
+        .ude-student--detail__name {
+            @include styleText($color-black-0, $fs-0, $fw-bold-1);
+            line-height: 20px;
+            height: 43px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .ude-student--detail__author {
+            @include styleText($color-gray-4, $fs-1 - 1px, $fw-normal);
+            padding-top: 10px;
+            line-height: 15px;
+            height: 25px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+        .ude-student--detail__rating-review {
+            padding-top: 10px;
+            .ude-student--detail__rating-star {
+                position: relative;
+
+                i:nth-child(1) {
+                    z-index: 2;
+                    @include styleText($color-yellow, $fs-1 - 1px, $fw-bold);
+                }
+                i:nth-child(2) {
+                    position: absolute;
+                    top: 21%;
+                    left: 0;
+                    z-index: -1;
+                    @include styleText($color-gray-3, $fs-1 - 1px, $fw-bold);
+                }
+            }
+            .ude-student--detail__review {
+                @include styleText($color-black-light, $fs-0, $fw-bold-1);
+            }
+            .ude-student--detail__count {
+                @include styleText($color-gray-4, $fs-1 - 1px, $fw-bold-0 - 200);
+            }
+        }
+        .ude-student--detail-price {
+            text-align: right;
+            padding-top: 10px;
+            .ude-student--detail__cost {
+                @include styleText($color-black-0, $fs-1, $fw-bold-0 - 200);
+                text-decoration: line-through;
+            }
+            .ude-student--detail__promotional-price {
+                @include styleText($color-black-0, $fs-2 - 2px, $fw-bold-1);
+            }
+        }
+    }
+}

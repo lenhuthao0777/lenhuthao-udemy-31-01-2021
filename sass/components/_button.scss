@@ -1,11 +1,15 @@
 .ude-btn--white{
     @include styleBtn($color-white-0, $color-gray-4, $pd-1 +1,$pd-1 + 2,$border-radius);
     @include styleText($color-gray-4, $fs-0, $fw-bold-1);
+    outline: none;
+    &:hover{
+        @include styleBtnHover($color-white-0, $color-black-0, $color-black-0);
+    }
 }
 .ude-btn--red{
-    @include styleBtn($color-red-0, $color-red-0, $pd-1 +1,$pd-1 + 2, $border-radius);
+    @include styleBtn($color-red-0, $color-red-0, $pd-1 +1, $pd-1 + 2, $border-radius);
     @include styleText($color-white-0, $fs-0, $fw-bold-1);
-
+    outline: none;
     &:hover{
         @include styleBtnHover($color-red-2,$color-white-0, $color-red-2);
     }

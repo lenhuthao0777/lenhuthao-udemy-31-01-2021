@@ -1,0 +1,42 @@
+.intro {
+    background: -webkit-linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+    .intro-list {
+        display: flex;
+        align-items: center;
+        .intro-item {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            .intro-icon {
+                padding-right: 10px;
+                i {
+                    font-size: $fs-4;
+                    color: $color-white-0;
+                }
+            }
+            .intro-detail {
+                h2 {
+                    font-size: $fs-2;
+                    color: $color-white-0;
+                    font-weight: $fw-normal;
+                    padding-bottom: 5px;
+                }
+                p {
+                    font-size: $fs-2 -3px;
+                    color: $color-white-0;
+                }
+            }
+            &.it-ct{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &.it-rg{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

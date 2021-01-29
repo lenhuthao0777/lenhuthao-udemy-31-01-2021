@@ -7,6 +7,7 @@
 @mixin styleBtn($bg-color, $bd-color, $pd-y, $pd-x, $radius) {
     background: $bg-color;
     border: 1px solid;
+    border-color: $bd-color;
     padding: $pd-y $pd-x;
     border-radius: $radius; 
     transition: 0.5s;
@@ -15,6 +16,12 @@
     background: $bg-color;
     color: $color;
     border-color: $bd-color;
+}
+@mixin styleHover($bg-color, $bd-color, $bd-radius) {
+    background: $bg-color;
+    border: 1px solid;
+    border-color: $bd-color;
+    border-radius: $bd-radius;
 }
 @mixin responesive($screen) {
     // lay gia tri dua vao ten man hinh

@@ -1,0 +1,71 @@
+// .footer{
+//     margin: 30px 0;
+// }
+.footer-content{
+    border-top: 1px solid $color-gray-3;
+    border-bottom: 1px solid $color-gray-3;
+}
+.footer-info{
+    margin: 40px 40px 30px 40px;
+}
+.footer-info--list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 110px;
+    li{
+        flex: 25%;
+        flex-grow: 0;
+        a{
+            @include styleText($color-blue, $fs-1, $fw-bold-0 - 200);
+            text-decoration: none;
+            &:hover{
+                color: $color-black-0;
+            }
+        }
+    }
+    .footer-bs{
+        @include styleText($color-blue, $fs-1, $fw-bold-1);
+    }
+    .footer-teach{
+        @include styleText($color-blue, $fs-1, $fw-bold-1);
+    }
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    .footer-left{
+        display: flex;
+        align-items: center;
+        .footer-img{
+            width: 110px;
+        }
+        .footer-copy{
+            @include styleText($color-black-0, $fs-1, $fw-bold-0 - 200);
+            padding-left: 10px;
+        }
+    }
+    .footer-right{
+        .footer-list{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li{
+                padding: 0 10px;
+                a{
+                    @include styleText($color-blue, $fs-1, $fw-bold-0 - 200);
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-black-0;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-line{
+    height: 6px;
+    width: 100%;
+    background: $color-red-0;
+}

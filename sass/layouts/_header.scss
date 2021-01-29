@@ -1,48 +1,121 @@
 // header
-.header-left{
-    display: flex;
-    align-items: center;
-    @include styleText($color-black-light, $fs-1,$fw-normal);
-    .navbar-brand{
-        img{
-            width: 110px;
+
+.header-navbar {
+    // padding: 5px 0;
+    .navbar-logo img {
+        width: 110px;
+    }
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+        .navbar-brand {
+            img {
+                width: 110px;
+            }
+        }
+        .navbar-cate span {
+            @include styleText($color-black-light, $fs-1, $fw-normal);
+            padding-right: 10px;
+        }
+        .navbar-form {
+            flex-grow: 1;
+            padding-left: 10px;
+            background: #f2f3f5;
+            border-radius: 2px;
+            .form-control {
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+            .input-group-append {
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                transition: all 0.5s;
+                &:hover .input-group-text {
+                    i {
+                        color: $color-white-0;
+                    }
+                }
+                &:hover {
+                    background: $color-red-0;
+                }
+                .input-group-text {
+                    background: transparent;
+                    border: none;
+                    i {
+                        color: $color-red-0;
+                    }
+                }
+            }
         }
     }
-    .header-cate{
-        @include styleText($color-black-light, $fs-1,$fw-normal);
-    }
-    .header-form{
-        flex-grow: 1;
-        padding-left: 10px;
-    }
-}
-.header-right{
-    .nav-link{
-        @include styleText($color-black-light, $fs-1,$fw-normal)
+    .navbar-right {
+        .navbar-list {
+            display: flex;
+            align-items: center;
+            .navbar-item {
+                padding: 10px 5px;
+                .navbar-link {
+                    text-decoration: none;
+                    @include styleText($color-black-light, $fs-1, $fw-normal);
+                    i{
+                        color: $color-black-light;
+                    }
+                }
+                .navbar-divider {
+                    height: 100%;
+                    border-left: 1px solid $color-gray-6;
+                }
+                &.ude-business {
+                    border: 1px solid transparent;
+                    &:hover {
+                        @include styleHover($color-gray-3, $color-gray-2, $border-radius);
+                    }
+                }
+                &.ude-teach {
+                    border: 1px solid transparent;
+                    &:hover {
+                        @include styleHover($color-gray-3, $color-gray-2, $border-radius);
+                    }
+                }
+                &.cart-icon{
+                    padding: 5px;
+                    border: 1px solid transparent;
+                    border-radius: 100%;
+                    &:hover{
+                        @include styleHover($color-gray-3, $color-gray-2, $border-radius);
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 // end header
 // corelap
 
 // responesive
-@include responesive("extra-large"){
-    .header-right{
-        .ude-business,.ude-teach{
+@include responesive("extra-large") {
+    .header-right {
+        .ude-business,
+        .ude-teach {
             display: none;
         }
     }
 }
-@include responesive("medium"){
-    .header-left{
-        .header-cate,.header-form{
+@include responesive("medium") {
+    .header-left {
+        .header-cate,
+        .header-form {
             display: none;
         }
-        .navbar-brand{
+        .navbar-brand {
             // margin: auto;
         }
     }
-    .header-right{
-        .ude-btnGroup{
+    .header-right {
+        .ude-btnGroup {
             display: none;
         }
     }

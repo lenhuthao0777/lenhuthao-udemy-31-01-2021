@@ -1,0 +1,37 @@
+.service {
+    padding: 24px 0;
+    background: $color-white-cream;
+}
+.ude-service--list {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .ude-service--item {
+        display: flex;
+        align-items: flex-start;
+        padding: 24px;
+        text-align: left;
+        background: $color-white-0;
+        border: 1px solid #e8e9eb;
+        height: 150px;
+        .ude-service--img {
+            padding: 0 10px;
+            img {
+                width: 42px;
+                height: auto;
+            }
+        }
+        .ude-service--description {
+            h2 {
+                @include styleText($color-black-0, $fs-2 - 1px, $fw-bold-1);
+                line-height: 1.47em;
+            }
+            span {
+                @include styleText($color-gray-4, $fs-0 + 1px, $fw-bold-0 - 200);
+                line-height: 1.5em;
+            }
+        }
+    }
+}

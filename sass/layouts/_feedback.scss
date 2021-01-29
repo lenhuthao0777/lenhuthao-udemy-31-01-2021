@@ -1,0 +1,94 @@
+.feedback {
+    background: $color-white-cream;
+}
+.feedback-content {
+    padding: 32px 0;
+    overflow: hidden;
+}
+.feedback-heading {
+    @include styleText($color-black-0, $fs-3, $fw-bold-1);
+    padding: 20px;
+    line-height: 1.33em;
+}
+.feedback-slick--list {
+    display: flex;
+    align-items: center;
+}
+.feedback-slick--item {
+    background: $color-white-0;
+    padding: 32px;
+    border-radius: 3px;
+    min-height: 260px;
+    .feedback-slick--info {
+        display: flex;
+        align-items: center;
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+        span {
+            @include styleText($color-black-0, $fs-0 + 1px, $fw-bold-1);
+            padding-left: 20px;
+        }
+    }
+    .feedback-silck--content {
+        padding-top: 20px;
+        span {
+            @include styleText($color-black-0, $fs-0 + 1px, $fw-bold-0 - 200);
+            line-height: 1.5em;
+        }
+    }
+}
+.company {
+    text-align: center;
+    padding-bottom: 24px
+}
+.company-heading {
+    span {
+        @include styleText($color-gray-4, $fs-1, $fw-normal);
+        padding-top: 16px;
+    }
+}
+.company-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    .company-img--link {
+        padding: 0 20px;
+    }
+}
+.seller-list{
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+    .best-seller{
+        display: flex;
+        justify-content: center;
+    }
+    .seller-divider{
+        border-right: 1px solid $color-gray-3;
+    }
+    .seller-item{
+        text-align: center;
+        // height: 164px;
+        max-width: 400px;
+        padding: 28px 30px;
+        .seller-heading{
+            @include styleText($color-black-0, $fs-2 - 1px, $fw-bold-1);
+            line-height: 1.47em;
+        }
+        .seller-desciption{
+            @include styleText($color-black-0,$fs-0 + 1px, $fw-bold-0 - 200);
+            line-height: 1.5em;
+            padding-top: 3px;
+        }
+        .seller-btn{
+            margin-top: 20px;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
