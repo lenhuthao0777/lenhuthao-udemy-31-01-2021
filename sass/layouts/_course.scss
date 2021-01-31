@@ -1,0 +1,203 @@
+/** @format */
+
+.my-courese {
+    margin-top: $mg-2;
+    .course-content {
+        .course-left {
+            background: $color-white-cream;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 360px;
+            padding: 0 32px;
+            .course-intro {
+                h2 {
+                    @include styleText($color-black-0, $fs-2 - 1px, $fw-bold-1);
+                }
+                p {
+                    @include styleText($color-black-0, $fs-2 - 4px, $fw-normal);
+                }
+            }
+        }
+        .course-right {
+            .nav {
+                justify-content: space-between;
+                // border: none;
+                .nav-item {
+                    &:hover {
+                        .nav-link {
+                            border: none;
+                        }
+                    }
+                    .nav-link.active {
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link {
+                        @include styleText($color-black-0, $fs-0, $fw-normal);
+                        border: none;
+                        &:hover {
+                            color: $color-blue;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                position: relative;
+                .ude-courses {
+                    // overflow: hidden;
+                }
+                .owl-stage-outer {
+                    padding: 20px 0;
+                }
+                .ude-course--list {
+                    padding: 20px 0;
+                    // display: flex;
+                    // sliders
+                    transform: translateX(-0%);
+                    .course-carousel__item {
+                        padding: 0 5px;
+                        &:hover {
+                            .ude-course--list__item {
+                                .ude-course--img {
+                                    .ude-course--img-overlay{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        .ude-course--list__item {
+                            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                            border: 1px solid #e8e9eb;
+                            .ude-course--detail {
+                                padding: 15px 10px;
+                            }
+                            .ude-course--img {
+                                position: relative;
+                                img {
+                                    width: 100%;
+                                }
+                                .ude-course--img-overlay{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: rgba(0, 0, 0, 0.3);
+                                    display: none;
+                                    transition: all 0.3s;
+                                }
+                            }
+                            .ude-course--detail__name {
+                                @include styleText($color-black-0, $fs-0, $fw-bold-1);
+                                line-height: 20px;
+                                height: 43px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                            }
+                            .ude-course--detail__author {
+                                @include styleText($color-gray-4, $fs-1 - 1px, $fw-normal);
+                                padding-top: 10px;
+                                line-height: 15px;
+                                height: 25px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 1;
+                            }
+                            .ude-course--detail__rating-review {
+                                padding-top: 10px;
+                                .ude-course--detail__rating-star {
+                                    position: relative;
+
+                                    i:nth-child(1) {
+                                        z-index: 2;
+                                        @include styleText($color-yellow, $fs-1 - 1px, $fw-bold);
+                                    }
+                                    i:nth-child(2) {
+                                        position: absolute;
+                                        top: 21%;
+                                        left: 0;
+                                        z-index: -1;
+                                        @include styleText($color-gray-3, $fs-1 - 1px, $fw-bold);
+                                    }
+                                }
+                                .ude-course--detail__review {
+                                    @include styleText($color-black-light, $fs-0, $fw-bold-1);
+                                }
+                                .ude-course--detail__count {
+                                    @include styleText($color-gray-4, $fs-1 - 1px, $fw-bold-0 - 200);
+                                }
+                            }
+                            .ude-course--detail-price {
+                                text-align: right;
+                                padding-top: 10px;
+                                .ude-course--detail__cost {
+                                    @include styleText($color-black-0, $fs-1, $fw-bold-0 - 200);
+                                    text-decoration: line-through;
+                                }
+                                .ude-course--detail__promotional-price {
+                                    @include styleText($color-black-0, $fs-2 - 2px, $fw-bold-1);
+                                }
+                            }
+                        }
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    top: 38%;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .owl-prev {
+                        width: 50px;
+                        height: 50px;
+                        background: $color-white-0;
+                        border-radius: 50%;
+                        outline: none;
+                        box-shadow: 0 0 10px $color-gray-4;
+                        transform: translateX(-30px);
+                        span {
+                            @include styleText($color-blue, $fs-2, $fw-bold);
+                        }
+                    }
+                    .owl-next {
+                        width: 50px;
+                        height: 50px;
+                        background: $color-white-0;
+                        border-radius: 50%;
+                        outline: none;
+                        box-shadow: 0 0 10px $color-gray-4;
+                        transform: translateX(30px);
+                        span {
+                            @include styleText($color-blue, $fs-2, $fw-bold);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responesive("extra-large") {
+}
+@include responesive("medium") {
+    .my-courese {
+        .course-content {
+            .course-left {
+                display: none;
+            }
+        }
+    }
+}
+@include responesive("small") {
+    .my-courese {
+        .course-content {
+            .course-left {
+                display: none;
+            }
+        }
+    }
+}

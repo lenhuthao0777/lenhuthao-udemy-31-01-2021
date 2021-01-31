@@ -1,49 +1,145 @@
-// header
-.header-left{
-    display: flex;
-    align-items: center;
-    @include styleText($color-black-light, $fs-1,$fw-normal);
-    .navbar-brand{
-        img{
+.container {
+    max-width: 1400px !important;
+    margin: 0 auto;
+}
+.myNavBar {
+    .navbar-brand {
+        flex-grow: 1;
+        img {
             width: 110px;
         }
     }
-    .header-cate{
-        @include styleText($color-black-light, $fs-1,$fw-normal);
-    }
-    .header-form{
+    .categories {
         flex-grow: 1;
-        padding-left: 10px;
+        i {
+            @include styleText($color-gray-4, $fs-1, $fw-bold);
+        }
+        span {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+    }
+    .input-search {
+        flex-grow: 6;
+        .form-control {
+            background: $color-gray-1;
+            border: none;
+            outline: none;
+            transition: none;
+            height: 44px;
+            &:focus {
+                box-shadow: none;
+                background: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+            }
+            &:focus + .input-group-append {
+                .input-group-text {
+                    color: $color-red-0;
+                    background: $color-white-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                    &:hover i {
+                        color: $color-white-0;
+                    }
+                    &:hover {
+                        background: $color-red-0;
+                    }
+                }
+            }
+        }
+        .input-group-append {
+            margin: 0;
+            .input-group-text {
+                background: $color-gray-1;
+                border: none;
+                transition: all 0.3s;
+                i {
+                    color: $color-red-0;
+                }
+                &:hover i {
+                    color: $color-white-0;
+                }
+                &:hover {
+                    background: $color-red-0;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        display: none;
+        align-items: center;
+        span {
+            padding: 0 5px;
+            font-size: $fs-0 !important;
+        }
+    }
+    .shoping-cart {
+        display: none;
     }
 }
-.header-right{
-    .nav-link{
-        @include styleText($color-black-light, $fs-1,$fw-normal)
-    }
-}
-// end header
 // corelap
 
 // responesive
-@include responesive("extra-large"){
-    .header-right{
-        .ude-business,.ude-teach{
+@include responesive("extra-large") {
+    .header-right {
+        .ude-business,
+        .ude-teach {
+            display: none;
+        }
+        .shoping-cart {
             display: none;
         }
     }
 }
-@include responesive("medium"){
-    .header-left{
-        .header-cate,.header-form{
+@include responesive("medium") {
+    .myNavBar {
+        .navbar-toggler {
             display: none;
         }
-        .navbar-brand{
-            // margin: auto;
+        .header-left {
+            .categories,
+            .input-search {
+            }
+            .navbar-brand {
+            }
+        }
+        .header-right {
+            .shoping-cart {
+                display: none;
+            }
         }
     }
-    .header-right{
-        .ude-btnGroup{
-            display: none;
+}
+@include responesive("small") {
+    .myNavBar {
+        .navbar-toggler {
+            display: flex;
+        }
+        .header-left {
+            .categories,
+            .input-search {
+                display: none;
+            }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    // margin: 0 auto;
+                }
+            }
+        }
+        .header-right {
+            .ude-btnGroup {
+                display: none;
+            }
+            .shoping-cart {
+                display: block;
+            }
         }
     }
 }

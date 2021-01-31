@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,82 +17,2166 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md">
-                <div class="col-2 col-sm-2 d-md-none">
-                    
-                        <i class="fa fa-bars"></i>
-                        <i class="fa fa-search"></i>
-
-                    
-                </div>
-                <div class="header-left col-8 col-sm-8 col-md-9 col-lg-9 col-xl-7">
+    <header class="container myNavBar">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler col-2" type="button" data-toggle="collapses"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+                <span class="fa fa-search"></span>
+            </button>
+            <div class="header-left col-xl-7 col-lg-9 col-md-9 col-8">
+                <div class="row align-items-center">
                     <a class="navbar-brand mx-auto mx-md-0" href="#">
-                        <img src="./img/logo-coral.svg" alt="">
+                        <img src="./img/logo-coral.svg" alt="" />
                     </a>
-                    <span class="header-cate">
+                    <div class="categories">
                         <i class="fa fa-th"></i>
-                        Categories
-                    </span>
-                    <form action="" class="header-form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for anything"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+                        <span>Categories</span>
+                    </div>
+                    <div class="input-search">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for courses" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
                             </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right col-xl-5 col-lg-3 col-md-3 col-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto align-items-center">
+                        <li class="nav-item ude-business">
+                            <a class="nav-link" href="#">Udemy for Business</a>
+                        </li>
+                        <li class="nav-item ude-teach">
+                            <a class="nav-link" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item ude-btn">
+                            <a class="nav-link" href="#"><button class="ude-btn--white">Log In</button></a>
+                        </li>
+                        <li class="nav-item ude-btn">
+                            <a class="nav-link" href="#"><button class="ude-btn--red">Sign Up</button></a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="shoping-cart"><i class="fa fa-shopping-cart"></i></span>
+            </div>
+        </nav>
+    </header>
+    <section class="udemy-carousel">
+        <div class="container">
+            <div class="carousel-fullscreen col-xl-12 col-lg-12 col-md-12 sol-sm-12">
+                <div class="carousel-content">
+                    <div class="carousel-content__heading">
+                        <h2>Learn on your schedule</h2>
+                    </div>
+                    <div class="carousel-content__detail">
+                        <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+                    </div>
+                    <form action="" class="carousel-form">
+                        <div class="carousel-form__input">
+                            <input type="text" placeholder="What do you want to learn?" />
+                            <span class="fa fa-search"></span>
                         </div>
                     </form>
                 </div>
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa fa-bars"></i>
-                    </span>
-                </button> -->
-                <div class="header-right col-2 col-sm-2 col-md-3 col-lg-3 col-xl-5">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ude-business">
-                            <a class="nav-link" href="#">
-                                Udemy for Business
-                            </a>
-                        </li>
-                        <li class="nav-item ude-teach">
-                            <a class="nav-link" href="#">
-                                Teach on udemy
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item ude-btnGroup"><button class="ude-btn--white">Login</button></li>
-                        <li class="nav-item ude-btnGroup"><button class="ude-btn--red">Sign Up</button></li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
         </div>
-    </header>
-    <section class="udemy-carousel"></section>
-    <section class="intro"></section>
-    <section class="courese"></section>
-    <section class="service"></section>
-    <section class="student"></section>
-    <section class="banner"></section>
-    <section class="top-categories"></section>
-    <section class="feedback"></section>
-    <section class="company"></section>
-    <section class="footer"></section>
+    </section>
+    <section class="intro">
+        <div class="container">
+            <div class="intro-list col-xl-12 col-lg-12 col-md-12">
+                <div class="col-xl-4 col-md-4">
+                    <div class="intro-item">
+                        <span class="intro-icon"><i class="fab fa-digital-ocean"></i></span>
+                        <div class="intro-detail">
+                            <h2>100,000 online courses</h2>
+                            <p>Explore a variety of fresh topics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="intro-item it-ct">
+                        <span class="intro-icon"><i class="far fa-check-circle"></i></span>
+                        <div class="intro-detail">
+                            <h2>Expert instruction</h2>
+                            <p>Find the right instructor for you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="intro-item it-rg">
+                        <span class="intro-icon"><i class="fas fa-history"></i></span>
+                        <div class="intro-detail">
+                            <h2>Lifetime access</h2>
+                            <p>Learn on your schedule</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-courese">
+        <div class="container">
+            <div class="course-content">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="course-left">
+                            <div class="course-intro">
+                                <h2>The world’s largest selection of courses</h2>
+                                <p>Choose from over 100,000 online video courses with new additions published every
+                                    month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="myTab course-right">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#business">Business</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#design"> Design</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#photography">Photography</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#development">Development</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#marketing">Marketing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#it">IT and Software</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#personal">Personal Development</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane container active" id="business">
+                                    <div class="ude-courses">
+                                        <div class="ude-course--list owl-carousel owl-theme">
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">The Complete Foundation
+                                                            Stock Trading Course</h2>
+                                                        <p class="ude-course--detail__author">Mohsen Hassan, bloom team
+                                                        </p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (17,932)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$134.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$15,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1570206_26c6_4.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Microsoft Power BI - Up &
+                                                            Running With Power BI Desktop</h2>
+                                                        <p class="ude-course--detail__author">Maven Analytics, Chris
+                                                            Dutton, Aaron Parry</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.6
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (19,969)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$94.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$10,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1269254_1df3_8.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">MBA in a Box: Business
+                                                            Lessons from a CEO</h2>
+                                                        <p class="ude-course--detail__author">365 Careers</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (7,103)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="design">
+                                    <div class="ude-courses">
+                                        <div class="ude-course--list owl-carousel owl-theme">
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">The Complete Foundation
+                                                            Stock Trading Course</h2>
+                                                        <p class="ude-course--detail__author">Mohsen Hassan, bloom team
+                                                        </p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (17,932)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$134.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$15,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1570206_26c6_4.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Microsoft Power BI - Up &
+                                                            Running With Power BI Desktop</h2>
+                                                        <p class="ude-course--detail__author">Maven Analytics, Chris
+                                                            Dutton, Aaron Parry</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.6
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (19,969)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$94.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$10,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1269254_1df3_8.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">MBA in a Box: Business
+                                                            Lessons from a CEO</h2>
+                                                        <p class="ude-course--detail__author">365 Careers</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (7,103)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="photography">
+                                    <div class="ude-courses">
+                                        <div class="ude-course--list owl-carousel owl-theme">
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">The Complete Foundation
+                                                            Stock Trading Course</h2>
+                                                        <p class="ude-course--detail__author">Mohsen Hassan, bloom team
+                                                        </p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (17,932)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$134.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$15,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1570206_26c6_4.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Microsoft Power BI - Up &
+                                                            Running With Power BI Desktop</h2>
+                                                        <p class="ude-course--detail__author">Maven Analytics, Chris
+                                                            Dutton, Aaron Parry</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.6
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (19,969)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$94.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$10,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1269254_1df3_8.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">MBA in a Box: Business
+                                                            Lessons from a CEO</h2>
+                                                        <p class="ude-course--detail__author">365 Careers</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.5
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (7,103)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="course-carousel__item">
+                                                <div class="ude-course--list__item">
+                                                    <div class="ude-course--img">
+                                                        <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/864146_dbd7_10.jpg"
+                                                            alt="">
+                                                        <div class="ude-course--img-overlay">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ude-course--detail">
+                                                        <h2 class="ude-course--detail__name">Agile Crash Course: Agile
+                                                            Project Management; Agile Delivery</h2>
+                                                        <p class="ude-course--detail__author">Mauricio Rubio - Agile
+                                                            Guru & Founder of AgileKB | Ureducation</p>
+                                                        <div class="ude-course--detail__rating-review">
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__rating-star">
+                                                                <i class="fa fa-star-half"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </span>
+                                                            <span class="ude-course--detail__review">
+                                                                4.3
+                                                            </span>
+                                                            <span class="ude-course--detail__count">
+                                                                (27,307)
+                                                            </span>
+                                                        </div>
+                                                        <div class="ude-course--detail-price">
+                                                            <span class="ude-course--detail__cost">$109.99</span>
+                                                            <span
+                                                                class="ude-course--detail__promotional-price">$12,99</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="development">...</div>
+                                <div class="tab-pane container fade" id="marketing">...</div>
+                                <div class="tab-pane container fade" id="it">...</div>
+                                <div class="tab-pane container fade" id="personal">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="service-content">
+                <div class="ude-service--list col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-xl-4">
+                        <div class="ude-service--item">
+                            <div class="ude-service--img">
+                                <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg"
+                                    alt="">
+                            </div>
+                            <div class="ude-service--description">
+                                <h2>Go at your own pace</h2>
+                                <span>Enjoy lifetime access to courses on Udemy’s website and app</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="ude-service--item">
+                            <div class="ude-service--img">
+                                <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/learn_from_experts.svg"
+                                    alt="">
+                            </div>
+                            <div class="ude-service--description">
+                                <h2>Learn from industry experts</h2>
+                                <span>Select from top instructors around the world</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="ude-service--item">
+                            <div class="ude-service--img">
+                                <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/video_courses.svg"
+                                    alt="">
+                            </div>
+                            <div class="ude-service--description">
+                                <h2>Find video courses on almost any topic</h2>
+                                <span>Build your library for your career and personal growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-mobile">
+                    <div id="myService-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myService-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myService-carousel" data-slide-to="1"></li>
+                            <li data-target="#myService-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="service--list__mobile">
+                                    <div class="ude-service--item">
+                                        <div class="ude-service--img">
+                                            <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="ude-service--description">
+                                            <h2>Go at your own pace</h2>
+                                            <span>Enjoy lifetime access to courses on Udemy’s website and app</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="service--list__mobile">
+                                    <div class="ude-service--item">
+                                        <div class="ude-service--img">
+                                            <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/learn_from_experts.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="ude-service--description">
+                                            <h2>Learn from industry experts</h2>
+                                            <span>Select from top instructors around the world</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="service--list__mobile">
+                                    <div class="ude-service--item">
+                                        <div class="ude-service--img">
+                                            <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/video_courses.svg"
+                                                alt="">
+                                        </div>
+                                        <div class="ude-service--description">
+                                            <h2>Find video courses on almost any topic</h2>
+                                            <span>Build your library for your career and personal growth</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myService-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myService-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- <div class="ude-service--lists owl-carousel owl-theme">
+                        
+                        
+                        
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="student">
+        <div class="container">
+            <h1 class="ude-student--heading">Students are viewing</h1>
+            <div class="ude-student">
+                <div class="ude-student--list owl-carousel owl-theme">
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-carousel-item">
+                        <div class="ude-student--list__item">
+                            <div class="ude-student--img">
+                                <img src="https://web.archive.org/web/20200705143927/https://img-a.udemycdn.com/course/480x270/1288044_d262_2.jpg"
+                                    alt="">
+                                <div class="ude-student--img-overlay">
+                                </div>
+                            </div>
+                            <div class="ude-student--detail">
+                                <h2 class="ude-student--detail__name">The Complete Foundation Stock Trading Course</h2>
+                                <p class="ude-student--detail__author">Mohsen Hassan, bloom team</p>
+                                <div class="ude-student--detail__rating-review">
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__rating-star">
+                                        <i class="fa fa-star-half"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="ude-student--detail__review">
+                                        4.5
+                                    </span>
+                                    <span class="ude-student--detail__count">
+                                        (17,932)
+                                    </span>
+                                </div>
+                                <div class="ude-student--detail-price">
+                                    <span class="ude-student--detail__cost">$134.99</span>
+                                    <span class="ude-student--detail__promotional-price">$15,99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="style-banner">
+            <div class="style-banner__top-border"></div>
+            <div class="style-banner__content">
+                <div class="style-banner__icon top">
+                    <div class="style-banner__icon-item"><i class="far fa-file-video"></i></div>
+                    <div class="style-banner__icon-item"><i class="fab fa-acquisitions-incorporated"></i></div>
+                    <div class="style-banner__icon-item"><i class="far fa-address-book"></i></div>
+                    <div class="style-banner__icon-item"><i class="fab fa-accusoft"></i></div>
+                    <div class="style-banner__icon-item"><i class="fab fa-amazon"></i></div>
+                </div>
+                <div class="style-banner__icon center">
+                    <div class="style-banner__icon-item left"><i class="fab fa-react"></i></div>
+                    <div class="style-banner__description">
+                        <h2>Get personalized recommendations</h2>
+                        <span>Answer a few questions for your top picks</span>
+                        <div class="style-banner__btn">
+                            <a href="" class="style-banner__btn-link ude-btn--red">Get started</a>
+                        </div>
+                    </div>
+                    <div class="style-banner__icon-item right"><i class="fas fa-photo-video"></i></div>
+                </div>
+                <div class="style-banner__icon bottom">
+                    <div class="style-banner__icon-item"><i class="fas fa-tv"></i></div>
+                    <div class="style-banner__icon-item"><i class="fas fa-balance-scale"></i></div>
+                    <div class="style-banner__icon-item"><i class="fas fa-award"></i></div>
+                    <div class="style-banner__icon-item"><i class="fab fa-avianex"></i></div>
+                    <div class="style-banner__icon-item"><i class="fas fa-atlas"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="top-categories">
+        <div class="container">
+            <div class="categories-content">
+                <h2 class="categories-heading">Top categories</h2>
+                <div class="category">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fas fa-laptop-code"></i></span>
+                                        <span class="category-panel--name">Development</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-suitcase"></i></span>
+                                        <span class="category-panel--name">Business</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-desktop"></i></span>
+                                        <span class="category-panel--name">IT and Software</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-pencil-ruler"></i></span>
+                                        <span class="category-panel--name">Design</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-circle-notch"></i></span>
+                                        <span class="category-panel--name">Marketing</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-book-open"></i></span>
+                                        <span class="category-panel--name">Personal Development</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fa fa-camera-retro"></i></span>
+                                        <span class="category-panel--name">Photography</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="category-panel--body">
+                                <a href="">
+                                    <div class="category-panel--content">
+                                        <span class="category-panel--icon"><i class="fab fa-itunes-note"></i></span>
+                                        <span class="category-panel--name">Music</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback-content">
+                <h2 class="feedback-heading">What our students have to say</h2>
+                <div class="feedback-slick">
+                    <div class="feedback-slick--list owl-carousel owl-theme">
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg"
+                                        alt="">
+                                    <span>Borivoje</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>Udemy is a life saver. I don't have the time or money for a college education.
+                                        My goal is to become a freelance web developer, and thanks to Udemy, I'm really
+                                        close.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/22869844_edad.jpg"
+                                        alt="">
+                                    <span>Dipesh</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>I believe in lifelong learning and Udemy is a great place to learn from
+                                        experts. I've learned a lot and recommend it to all my friends.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg"
+                                        alt="">
+                                    <span>Borivoje</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>Udemy is a life saver. I don't have the time or money for a college education.
+                                        My goal is to become a freelance web developer, and thanks to Udemy, I'm really
+                                        close.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg"
+                                        alt="">
+                                    <span>Borivoje</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>Udemy is a life saver. I don't have the time or money for a college education.
+                                        My goal is to become a freelance web developer, and thanks to Udemy, I'm really
+                                        close.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg"
+                                        alt="">
+                                    <span>Borivoje</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>Udemy is a life saver. I don't have the time or money for a college education.
+                                        My goal is to become a freelance web developer, and thanks to Udemy, I'm really
+                                        close.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-slick-type">
+                            <div class="feedback-slick--item">
+                                <div class="feedback-slick--info">
+                                    <img src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg"
+                                        alt="">
+                                    <span>Borivoje</span>
+                                </div>
+                                <div class="feedback-silck--content">
+                                    <span>Udemy is a life saver. I don't have the time or money for a college education.
+                                        My goal is to become a freelance web developer, and thanks to Udemy, I'm really
+                                        close.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company">
+                <div class="company-content">
+                    <div class="company-heading">
+                        <span>Trusted by companies of all sizes</span>
+                    </div>
+                    <div class="company-list">
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/booking.svg" alt="">
+                        </a>
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/volkswagen.svg" alt="">
+                        </a>
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/mercedes.svg" alt="">
+                        </a>
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/pinterest.svg" alt="">
+                        </a>
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/adidas.svg" alt="">
+                        </a>
+                        <a href="" class="company-img--link col-xl-2 col-md-2 col-sm-12">
+                            <img src="./img/paypal.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="seller">
+                <div class="seller-content">
+                    <div class="seller-list">
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <div class="best-seller seller-divider">
+                                <div class="seller-item">
+                                    <h2 class="seller-heading">Become an instructor</h2>
+                                    <p class="seller-desciption">Top instructors from around the world teach millions of
+                                        students on Udemy. We provide the tools and skills to teach what you love.</p>
+                                    <div class="seller-btn">
+                                        <a href="" class="ude-btn--red">Start teaching today</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <div class="best-seller">
+                                <div class="seller-item">
+                                    <h2 class="seller-heading">Ude for Business</h2>
+                                    <p class="seller-desciption">Get unlimited access to 4,000+ of Udemy’s top courses
+                                        for your team.</p>
+                                    <div class="seller-btn">
+                                        <a href="" class="ude-btn--red">Get Udemy for Business</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-info">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9">
+                            <ul class="footer-info--list">
+                                <li><a href="" class="footer-bs">Udemy for Business</a></li>
+                                <li><a href="" class="footer-teach">Teach on Udemy</a></li>
+                                <li><a href="">Udemy app</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Help and Support</a></li>
+                                <li><a href="">Affiliate</a></li>
+                                <li><a href="">Sitemap</a></li>
+                                <li><a href="">Featured courses</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="footer-menu--dropUp">
+                                <div class="footer-btn">
+                                    <button class="footer-btn--dropUp">
+                                        <span class="fa fa-globe-africa"></span>
+                                        Language
+                                        <span class="fa fa-angle-up"></span>
+                                    </button>
+                                </div>
+                                <div class="footer-btn--laguage">
+                                    <ul class="language-list">
+                                        <li class="laguage-item">VietNam</li>
+                                        <li class="laguage-item">Englisgh</li>
+                                        <li class="laguage-item">Japan</li>
+                                        <li class="laguage-item">ThaiLand</li>
+                                        <li class="laguage-item">Korean</li>
+                                        <li class="laguage-item">Lao</li>
+                                        <li class="laguage-item">Chinese</li>
+                                        <li class="laguage-item">Chinese</li>
+                                        <li class="laguage-item">Chinese</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container ">
+                <div class="footer-bottom--list">
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <div class="footer-left">
+                            <img src="./img/logo-coral.svg" alt="" class="footer-img">
+                            <span class="footer-copy">Copyright © 2020 Udemy, Inc.</span>
+                        </div>
+                        <div class="footer-left--mobile">
+                            <ul class="footer-left--mobile-list">
+                                <li><a href="">Terms</a></li>
+                                <li><a href="">Privacy Policy and Cookie Policy</a></li>
+                                <li><a href="">Sitemap</a></li>
+                                <li><a href="">Featured Course</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Get the app</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ft-right col-xl-6 col-md-6">
+                        <div class="footer-right">
+                            <ul class="footer-list">
+                                <li><a href="">Terms</a></li>
+                                <li><a href="">Privacy Policy and Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.feedback-slick--list').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.ude-student--list').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
     <script src="./js/script.js"></script>
 </body>
 

@@ -1,4 +1,69 @@
-.udemy-carousel{
+.udemy-carousel {
     background-image: url(../img/cover.jpg);
-    height: 400px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .carousel-fullscreen {
+        .carousel-content {
+            width: 460px;
+            padding-top: 100px;
+            .carousel-content__heading h2 {
+                @include styleText($color-white-0, $fs-4, $fw-bold);
+                padding-bottom: 10px;
+                text-shadow: 0 2px 4px rgba(41, 48, 59, 55%);
+            }
+            .carousel-content__detail p {
+                @include styleText($color-white-0, $fs-2, $fw-normal);
+                line-height: 30px;
+                padding-bottom: 10px;
+                text-shadow: 0 2px 4px rgba(41, 48, 59, 55%);
+            }
+            .carousel-form__input {
+                display: flex;
+                align-items: center;
+                input {
+                    flex-grow: 1;
+                    height: 50px;
+                    border: none;
+                    border-top-left-radius: $border-radius;
+                    border-bottom-left-radius: $border-radius;
+                    outline: none;
+                }
+                span {
+                    padding: 17.5px;
+                    background: white;
+                    border-top-right-radius: $border-radius;
+                    border-bottom-right-radius: $border-radius;
+                    color: $color-red-0;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    &:hover {
+                        background: $color-red-0;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responesive("extra-large") {
+    
+}
+@include responesive("medium") {
+    .udemy-carousel{
+        position: relative;
+    }
+    .carousel-content{
+        // max-width: 300px;
+    }
+}
+@include responesive("small") {
+    .udemy-carousel{
+        .carousel-fullscreen{
+            .carousel-content{
+                max-width: 310px;
+            }
+        }
+    }
 }
