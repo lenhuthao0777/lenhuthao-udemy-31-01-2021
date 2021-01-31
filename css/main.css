@@ -153,6 +153,12 @@ table {
   font-weight: 700;
 }
 
+.ude-btn--white:hover {
+  background: #fff;
+  color: #29303b;
+  border-color: #29303b;
+}
+
 .ude-btn--red {
   background: #ec5252;
   border: 1px solid;
@@ -283,6 +289,26 @@ table {
 
 .myNavBar .shoping-cart {
   display: none;
+}
+
+.myNavBar .header-right .ude-business {
+  border: 1px solid transparent;
+}
+
+.myNavBar .header-right .ude-business:hover {
+  background: rgba(20, 23, 28, 0.05);
+  border-radius: 2px;
+  border: 1px solid #a1a7b3;
+}
+
+.myNavBar .header-right .ude-teach {
+  border: 1px solid transparent;
+}
+
+.myNavBar .header-right .ude-teach:hover {
+  background: rgba(20, 23, 28, 0.05);
+  border-radius: 2px;
+  border: 1px solid #a1a7b3;
 }
 
 @media screen and (max-width: 1200px) {

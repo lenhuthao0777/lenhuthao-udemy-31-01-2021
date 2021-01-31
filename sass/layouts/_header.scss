@@ -80,6 +80,24 @@
     .shoping-cart {
         display: none;
     }
+    .header-right{
+        .ude-business{
+            border: 1px solid transparent;
+            &:hover{
+                background: $color-gray-1;
+                border-radius: 2px;
+                border: 1px solid $color-gray-2;
+            }
+        }
+        .ude-teach{
+            border: 1px solid transparent;
+            &:hover{
+                background: $color-gray-1;
+                border-radius: 2px;
+                border: 1px solid $color-gray-2;
+            }
+        }
+    }
 }
 // corelap
 
